@@ -7,6 +7,8 @@ import mascocuidadoImg from "../../public/mascocuidado.png";
 import computersuppliesImg from "../../public/Computer-supplies-page.jpg";
 import electrorafaelaImg from "../../public/electrorafaela.png"
 
+
+
 export const links = [
   {
     name: "Home",
@@ -78,6 +80,7 @@ export const projectsData = [
       "I worked as a front-end developer on this project for 1 year. This was a final project for a bootcamp. It precisely was a quiz game about this Netflix show.",
     tags: ["JavaScript", "CSS", "HTML", "SASS"],
     imageUrl: cobrakaiImg,
+    url:"https://cobra-kai-fan.netlify.app"
   },
   {
     title: "MascoCuidado",
@@ -85,6 +88,7 @@ export const projectsData = [
       "Job board for remote developer simulation jobs. I was the front-end developer in the team. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Tailwind", "Node", "Express"],
     imageUrl: mascocuidadoImg,
+    url:"https://mascocuidado.netlify.app/"
   },
   {
     title: "Computer Supplies",
@@ -92,6 +96,7 @@ export const projectsData = [
       "An ecommerce site of computer supplies for a bootcamp as a final project. I used ReactJs for the first time in this project. It shows features like filtering, sorting, products count. In this project the CSS was poor because we focused on learning React.",
     tags: ["ReactJs", "Firebase", "Boostrap", "CSS"],
     imageUrl: computersuppliesImg,
+    url:"https://proyecto-ecommerce-final-imhoff-jose.vercel.app/"
   },
   {
     title: "Electro Rafaela",
@@ -99,6 +104,7 @@ export const projectsData = [
       "An ecommerce site without a cart for a local company to show the products that they sell. It shows features like filtering,paginate, products count.",
     tags: ["ReactJs", "Firebase", "TailwindCSS", "NodeJs"],
     imageUrl: electrorafaelaImg,
+    url:"https://electro-rafaela.vercel.app/"
   }
 ] as const;
 
