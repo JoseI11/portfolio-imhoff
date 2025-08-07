@@ -17,9 +17,9 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] min-h-screen "
     >
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mb-32">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -33,7 +33,7 @@ export default function Intro() {
               height={200}
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-36 w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -87,7 +87,7 @@ export default function Intro() {
         <a
           className="group bg-white px-7 py-3 flex items-center gap 2 rounded-full outline-none 
         focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="/Jose_Imhoff_FrontEnd_Dev_Junior.pdf"
+          href="/Jose-Imhoff-Frontend-Developer.pdf"
           download
         >
           Download CV{" "}
@@ -108,6 +108,8 @@ export default function Intro() {
           <FaGithubSquare />
         </a>
       </motion.div>
+
+
     </section>
   );
 }
