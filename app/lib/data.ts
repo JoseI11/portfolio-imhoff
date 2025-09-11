@@ -69,7 +69,7 @@ export const experiencesData = [
     location: "Rafaela, Santa Fe, Argentina",
     description: "I designed and developed a corporate website for a client using **Next.js, Tailwind CSS, and Firebase** to showcase over 500 products. I independently led the technical decisions and successfully delivered the project on time.",
     icon: React.createElement(FaReact),
-    date: "2025 - 2025",
+    date: "2025",
   }
 ] as const;
 
