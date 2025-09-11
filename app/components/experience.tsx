@@ -12,11 +12,20 @@ import { useTheme } from "../context/theme-context";
 export default function Experience() {
   const { theme } = useTheme()
   const { ref } = useSectionInView("Experience");
+
+    const sortedExperience = [...experiencesData].sort((a, b) => {
+      const endA = parseInt(a.date.split("-")[1].trim());
+      const endB = parseInt(b.date.split("-")[1].trim());
+
+      return endB - endA; 
+    })
+    
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
+      <VerticalTimeline lineColor="#cc0000">
+       
+        {sortedExperience.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={
