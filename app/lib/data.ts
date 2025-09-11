@@ -50,14 +50,14 @@ export const educationData = [
 export const experiencesData = [
 
   {
-    title: "Full Stack Developer",
+    title: "PHP Full Stack Developer | MyWORK (Remote)",
     location: "Rafaela, Santa Fe, Argentina",
     description: "Delivered website updates and new features for 3+ local businesses,Built and maintained full-stack solutions using HTML5, CSS3, JavaScript, PHP,  and MySQL as a database. Collaborated with a senior developer to implement advanced features, reducing client project timelines by 20%",
     icon: React.createElement(FaReact),
     date: "2022 - 2023",
   },
   {
-    title: "Administrative Assistant",
+    title: "Administrative Assistant | AGT Automatizaciones (On-site)",
     location: "Rafaela, Santa Fe, Argentina",
     description:
       "I worked as a administrative assistant for a company, one of my tasks were: take register of the materials and hours of the different jobs of the employees",
@@ -65,11 +65,11 @@ export const experiencesData = [
     date: "2023 - 2024",
   },
   {
-    title: "Full Stack Developer in a store",
+    title: "Next.js Full Stack Developer | Electro Rafaela (On-site)",
     location: "Rafaela, Santa Fe, Argentina",
     description: "I'm now a full-stack developer working as a freelancer while attending a store. My stack includes React, Next.js, TypeScript, TailwindCSS and Firebase. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2025 - present",
+    date: "2025 - 2025",
   }
 ] as const;
 
