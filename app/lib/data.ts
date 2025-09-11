@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaDesktop, FaReact } from "react-icons/fa";
+import { FaDesktop, FaPhp, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import cobrakaiImg from "../../public/Karate-kid-page.jpg";
 import mascocuidadoImg from "../../public/mascocuidado.png";
@@ -52,8 +52,8 @@ export const experiencesData = [
   {
     title: "PHP Full Stack Developer | MyWORK (Remote)",
     location: "Rafaela, Santa Fe, Argentina",
-    description: "Delivered website updates and new features for 3+ local businesses,Built and maintained full-stack solutions using HTML5, CSS3, JavaScript, PHP,  and MySQL as a database. Collaborated with a senior developer to implement advanced features, reducing client project timelines by 20%",
-    icon: React.createElement(FaReact),
+    description: "As a PHP Full-Stack Developer, I was responsible for implementing new functionalities and maintaining websites. I used PHP for the backend, along with HTML, CSS, and Bootstrap for the frontend. I also optimized system stability and performance by refactoring code and improving the MySQL database structure. The entire team collaborated effectively using Git for version control.",
+    icon: React.createElement(FaPhp),
     date: "2022 - 2023",
   },
   {
@@ -67,7 +67,7 @@ export const experiencesData = [
   {
     title: "Next.js Full Stack Developer | Electro Rafaela (On-site)",
     location: "Rafaela, Santa Fe, Argentina",
-    description: "I'm now a full-stack developer working as a freelancer while attending a store. My stack includes React, Next.js, TypeScript, TailwindCSS and Firebase. I'm open to full-time opportunities.",
+    description: "I designed and developed a corporate website for a client using **Next.js, Tailwind CSS, and Firebase** to showcase over 500 products. I independently led the technical decisions and successfully delivered the project on time.",
     icon: React.createElement(FaReact),
     date: "2025 - 2025",
   }

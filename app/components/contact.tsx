@@ -23,7 +23,7 @@ export default function Contact() {
     >
       <SectionHeading>
         Contact me
-        <p className="text-gray-700 text-sm mt-3 dark:text-white/88">
+        <p className="text-gray-700 text-[15px] mt-3 dark:text-white">
           Please contact me directly at{" "}
           <a className="underline" href="mailto:jose-imhoff@hotmail.com">
             jose-imhoff@hotmail.com
@@ -31,7 +31,7 @@ export default function Contact() {
           or through this form.
         </p>
         <form
-          className="mt-10 flex flex-col dark:text-black/80"
+          className="mt-10 flex flex-col dark:text-white/80"
           action={async (formData) => {
         
             const {error} = await senderEmail(formData);
