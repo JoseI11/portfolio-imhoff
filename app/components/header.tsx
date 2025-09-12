@@ -5,9 +5,16 @@ import { links } from "../lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "../context/active-section-context";
+
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick} =
     useActiveSectionContext();
+    // useEffect(() => {
+    //   const link = links.find((l)=> l.name === activeSection)
+    //   if(link){
+    //     window.history.replaceState(null, '', link.hash)
+    //   }
+    // }, [activeSection])
 
 
   return (
@@ -43,3 +50,5 @@ export default function Header() {
     </header>
   );
 }
+
+
