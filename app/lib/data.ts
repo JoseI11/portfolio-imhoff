@@ -80,7 +80,7 @@ export const projectsData = [
       "I worked as a front-end developer on this project for 1 year. This was a final project for a bootcamp. It precisely was a quiz game about this Netflix show.",
     tags: ["JavaScript", "CSS", "HTML", "SASS"],
     imageUrl: cobrakaiImg,
-    url:"https://cobra-kai-fan.netlify.app"
+    url:"https://cobra-kai-page.netlify.app/"
   },
   {
     title: "MascoCuidado",
