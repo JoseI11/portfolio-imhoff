@@ -7,7 +7,8 @@ import Footer from "./components/footer";
 import { Toaster } from "react-hot-toast";
 import ThemeSwitch from "./components/theme-switch";
 import ThemeContextProvider from "./context/theme-context";
-
+import Image from "next/image";
+import whatsapplogo from "../public/Social Networks/whatsapplogo.png"
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -46,6 +47,14 @@ export default function RootLayout({
           </ActiveSectionContextProvider>
           <ThemeSwitch />
         </ThemeContextProvider>
+      
+       
+          <a className="fixed bottom-4 right-4 w-48" href="https://wa.me/3492516734/" target="_blank" rel="noopener noreferrer">
+            <Image src={whatsapplogo} alt={"Whatsapp"} width={200} height={200} />
+          </a>
+   
+
+
       </body>
     </html>
   );
