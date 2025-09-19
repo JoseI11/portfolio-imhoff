@@ -1,22 +1,33 @@
-import Intro from "../app/components/intro";
-import SectionDivider from "../app/components/section-divider";
-import About from "./components/about";
-import Contact from "./components/contact";
+import dynamic from 'next/dynamic';
 
-import Experience from "./components/experience";
+// Componentes esenciales que se cargan de inmediato
+import Intro from "./components/intro";
+import SectionDivider from "./components/section-divider";
 
-import Projects from "./components/projects";
-import Skills from "./components/skills";
+// Componentes que se cargarán dinámicamente
+const About = dynamic(() => import('./components/about'));
+const Projects = dynamic(() => import('./components/projects'));
+const Skills = dynamic(() => import('./components/skills'));
+const Services = dynamic(() => import('./components/services'));
+const Experience = dynamic(() => import('./components/experience'));
+const Contact = dynamic(() => import('./components/contact'));
 
 export default function Home() {
-  return <main className="flex flex-col items-center px-4">
-    <Intro />
-    <SectionDivider />
-    <About />
-    <Projects />
-    <Skills />
-    <Experience />
-    <Contact />
-  
-  </main>;
+  return (
+    <main className="flex flex-col items-center px-4">
+      <Intro />
+      <SectionDivider />
+      <About />
+      <SectionDivider />
+      <Projects />
+      <SectionDivider />
+      <Skills />
+      <SectionDivider />
+      <Services />
+      <SectionDivider />
+      <Experience />
+      <SectionDivider />
+      <Contact />
+    </main>
+  );
 }
