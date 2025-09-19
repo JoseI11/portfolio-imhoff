@@ -5,9 +5,7 @@ import Header from "../app/components/header";
 import ActiveSectionContextProvider from "./context/active-section-context";
 import Footer from "./components/footer";
 import { Toaster } from "react-hot-toast";
-import ThemeSwitch from "./components/theme-switch";
 import ThemeContextProvider from "./context/theme-context";
-import WhatsappButton from "./components/whatsapp-button";
 import FloatingButtons from "./components/FloatingButtons";
 
 const geistSans = localFont({
@@ -48,7 +46,6 @@ export default function RootLayout({
           </ActiveSectionContextProvider>
           <FloatingButtons />
         </ThemeContextProvider>
-        {/* <WhatsappButton /> */}
       </body>
     </html>
   );

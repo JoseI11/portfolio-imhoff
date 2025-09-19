@@ -1,9 +1,9 @@
 "use client";
 
 import React from 'react';
-import { useRef, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { useInView } from 'framer-motion';
+
 import Image from 'next/image';
 
 
@@ -20,8 +20,8 @@ interface ServiceShowcaseProps {
 export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center' });
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const ref = useRef<HTMLDivElement>(null);
-    const isInView = useInView(ref, { once: true, amount: 0.5 });
+ 
+    
 
     useEffect(() => {
         if (emblaApi) {
