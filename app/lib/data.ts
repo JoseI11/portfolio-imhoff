@@ -1,12 +1,14 @@
 import React from "react";
 
-import { FaDesktop, FaPhp, FaReact } from "react-icons/fa";
+import {  FaReact } from "react-icons/fa";
+import {  FaPhp } from "react-icons/fa";
+import { FaDesktop  } from "react-icons/fa";
+
 import { LuGraduationCap } from "react-icons/lu";
 import cobrakaiImg from "../../public/Karate-kid-page.jpg";
 import mascocuidadoImg from "../../public/mascocuidado.png";
 import computersuppliesImg from "../../public/Computer-supplies-page.jpg";
 import electrorafaelaImg from "../../public/electrorafaela.png"
-
 
 
 export const links = [
@@ -25,6 +27,10 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
+  },
+  {
+    name: "Services",
+    hash: "#services",
   },
   {
     name: "Experience",
@@ -46,6 +52,22 @@ export const educationData = [
     date: "2015-2020",
   },
 ]
+
+export const servicesData = [
+  {
+    title: "Web Design",
+    description: "Modern and responsive websites that adapt to all devices.",
+    icon: "🌐",
+  },
+  {
+    title: "Frontend Development",
+    description: "Creation of interactive user interfaces with HTML, CSS, and JavaScript.",
+    icon: "💻",
+  },
+
+  // Agrega más servicios según necesites
+] as const;
+
 
 export const experiencesData = [
 
@@ -105,6 +127,27 @@ export const projectsData = [
     tags: ["ReactJs", "Firebase", "TailwindCSS", "NodeJs"],
     imageUrl: electrorafaelaImg,
     url:"https://electro-rafaela.vercel.app/"
+  }
+] as const;
+
+export const showcaseServices = [
+  {
+    title: "Marketing Pro",
+    description: "Web page of the marketing company Marketing Pro",
+    imageUrl: "https://i.postimg.cc/N0b6gSV2/Captura-de-pantalla-2025-09-19-154022.png",
+    demoUrl: "https://marketing-plantilla.vercel.app/"
+  },
+  {
+    title: "Ethos Apparel",
+    description: "Web page for a clothing company",
+    imageUrl: "https://i.postimg.cc/R0v1x4Pz/Captura-de-pantalla-2025-09-19-154125.png",
+    demoUrl: "https://ethos-apparel.vercel.app/"
+  },
+  {
+    title: "Ice cream shop Delicias",
+    description: "Web page for the ice cream shop Delicias",
+    imageUrl: "https://i.postimg.cc/qRR8gQVb/Captura-de-pantalla-2025-09-19-153940.png",
+    demoUrl: "https://app.netlify.com/projects/tienda-delicias/"
   }
 ] as const;
 
