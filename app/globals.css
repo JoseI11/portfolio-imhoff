@@ -12,3 +12,8 @@ html.dark{
 .borderBlack {
   @apply border border-black/10;
 }
+/* Estilos para prevenir scroll horizontal */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
