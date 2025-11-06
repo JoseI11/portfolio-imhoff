@@ -5,10 +5,10 @@ import {  FaPhp } from "react-icons/fa";
 import { FaDesktop  } from "react-icons/fa";
 
 import { LuGraduationCap } from "react-icons/lu";
-import cobrakaiImg from "../../public/Karate-kid-page.jpg";
-import mascocuidadoImg from "../../public/mascocuidado.png";
-import computersuppliesImg from "../../public/Computer-supplies-page.jpg";
-import electrorafaelaImg from "../../public/electrorafaela.png"
+import cobrakaiImg from "../../public/Karate-kid-page.webp";
+import mascocuidadoImg from "../../public/mascocuidado.webp";
+import computersuppliesImg from "../../public/Computer-supplies-page.webp";
+import electrorafaelaImg from "../../public/electrorafaela.webp"
 
 
 export const links = [

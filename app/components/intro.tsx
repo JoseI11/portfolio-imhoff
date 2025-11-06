@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Perfilimagen from "../../public/jose-imhoff.png";
+import Perfilimagen from "../../public/imagenportadaprofesional.webp";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
@@ -34,7 +34,7 @@ export default function Intro() {
               height={200}
               quality="95"
               priority={true}
-              className="h-36 w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-[10rem] w-[10rem] rounded-full object-cover border-[0.35rem] border-white shadow-xl md:h-[20rem] md:w-[20rem]"
             />
           </motion.div>
 
