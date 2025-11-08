@@ -3,24 +3,15 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-
+import { useLanguage } from "../context/language-context";
 import Image from 'next/image';
+import {showcaseServices} from '../lib/data';
 
 
-
-interface ServiceShowcaseProps {
-    services: ReadonlyArray<{
-        title: string;
-        description: string;
-        imageUrl: string;  // Accept both StaticImageData and string
-        demoUrl: string;
-    }>;
-}
-
-export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
+export default function ServiceShowcase() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center' });
     const [selectedIndex, setSelectedIndex] = useState(0);
- 
+    const { language } = useLanguage();
     
 
     useEffect(() => {
@@ -38,7 +29,7 @@ export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
 
             <div className="relative w-full overflow-hidden" ref={emblaRef}>
                 <div className="flex">
-                    {services.map((service, index) => (
+                    {showcaseServices.map((service, index) => (
                         <div
                             key={index}
                             className="flex-[0_0_100%] sm:flex-[0_0_80%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 px-2 sm:px-4"
@@ -47,7 +38,7 @@ export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
                                 <div className="relative h-48 sm:h-56 md:h-64">
                                     <Image
                                         src={service.imageUrl}
-                                        alt={service.title}
+                                        alt={language === 'en' ? service.title.en : service.title.es}
                                         fill
                                         className="object-cover"
                                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
@@ -55,10 +46,10 @@ export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
                                 </div>
                                 <div className="p-4 sm:p-6">
                                     <h4 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-                                        {service.title}
+                                        {language === 'en' ? service.title.en : service.title.es}
                                     </h4>
                                     <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">
-                                        {service.description}
+                                        {language === 'en' ? service.description.en : service.description.es}
                                     </p>
                                     <a
                                         href={service.demoUrl}
@@ -93,7 +84,7 @@ export default function ServiceShowcase({ services }: ServiceShowcaseProps) {
 
             {/* Indicadores de página */}
             <div className="flex justify-center mt-4 sm:mt-6 gap-2">
-                {services.map((_, index) => (
+                {showcaseServices.map((_, index) => (
                     <button
                         key={index}
                         className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${index === selectedIndex

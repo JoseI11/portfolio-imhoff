@@ -9,8 +9,11 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "../lib/data";
 import { useSectionInView } from "../lib/hooks";
 import { useTheme } from "../context/theme-context";
+import { useLanguage } from "../context/language-context";
+
 export default function Experience() {
-  const { theme } = useTheme()
+  const { theme } = useTheme();
+  const { language } = useLanguage();
   const { ref } = useSectionInView("Experience");
 
     const sortedExperience = [...experiencesData].sort((a, b) => {
@@ -22,7 +25,7 @@ export default function Experience() {
     
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{language === 'en' ? 'My Experience' : 'Mi Experiencia'}</SectionHeading>
       <VerticalTimeline lineColor="#cc0000">
         {sortedExperience.map((item, index) => (
           <React.Fragment key={index}>
@@ -48,9 +51,9 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{item.description}</p>
+              <h3 className="font-semibold capitalize">{language === 'en' ? item.title.en : item.title.es}</h3>
+              <p className="font-normal !mt-0">{ language === 'en' ? item.location.en : item.location.es}</p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{language === 'en' ? item.description.en :  item.description.es}</p>
             </VerticalTimelineElement>
           </React.Fragment>
 

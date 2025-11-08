@@ -7,13 +7,15 @@ import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
 import { BsArrowBarRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useLanguage } from "../context/language-context";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "../lib/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
-  const{setActiveSection,setTimeOfLastClick}=useActiveSectionContext()
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { language } = useLanguage();
   return (
     <section
       ref={ref}
@@ -59,11 +61,23 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello everyone, I'm José Imhoff.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer oriented to front-end</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js) and TailwindCSS</span>.
+        {language === 'en' ? (
+          <>
+            <span className="font-bold">Hello everyone, I'm José Imhoff.</span> I'm a{" "}
+            <span className="font-bold">full-stack developer oriented to front-end</span> with{" "}
+            <span className="font-bold">2 years</span> of experience. I enjoy
+            building <span className="italic">sites & apps</span>. My focus is{" "}
+            <span className="underline">React (Next.js) and TailwindCSS</span>.
+          </>
+        ) : (
+          <>
+            <span className="font-bold">Hola a todos, soy José Imhoff.</span> Soy un{" "}
+            <span className="font-bold">desarrollador full-stack orientado al front-end</span> con{" "}
+            <span className="font-bold">2 años</span> de experiencia. Disfruto
+            construyendo <span className="italic">sitios y aplicaciones</span>. Mi enfoque es{" "}
+            <span className="underline">React (Next.js) y TailwindCSS</span>.
+          </>
+        )}
       </motion.h1>
 
       <motion.div
@@ -82,7 +96,7 @@ export default function Intro() {
           setTimeOfLastClick(Date.now());
         }}
         >
-          Contact me here{" "}
+          {language === 'en' ? 'Contact me here' : 'Contáctame aquí'}{" "}
           <BsArrowBarRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
@@ -91,7 +105,7 @@ export default function Intro() {
           href="/Jose-Imhoff-Frontend-Developer.pdf"
           download
         >
-          Download CV{" "}
+          {language === 'en' ? 'Download CV' : 'Descargar CV'}{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
