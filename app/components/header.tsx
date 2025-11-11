@@ -14,41 +14,42 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       <motion.div
-        className={clsx("fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem]",language === "en" ? "sm:w-[36rem]" : "sm:w-[42rem]","sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75")}
+        className="fixed top-0 left-1/2 h-[4.5rem] w-[95%] max-w-3xl rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className={clsx("flex", language === "en" ? " w-[20rem] sm:gap-2" : " w-[29rem]"," flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap ")}>
+
+      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 w-[95%] max-w-3xl -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
+        <ul className="flex w-full flex-wrap items-center justify-center gap-1 text-[0.7rem] text-gray-500 xs:text-[0.8rem] sm:flex-nowrap sm:gap-2 sm:text-[0.9rem]">
           {links.map((link) => (
             <motion.li 
-              className="h-3/4 flex items-center justify-center relative" 
+              className="h-3/4 flex items-center justify-center relative"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link 
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "flex w-full items-center justify-center px-2 py-3 transition hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap",
                   {
                     "text-gray-950 dark:text-gray-200": activeSection === link.name[language]
                   }
-                )} 
-                href={link.hash} 
+                )}
+                href={link.hash}
                 onClick={() => {
-                  setActiveSection(link.name[language]); 
+                  setActiveSection(link.name[language]);
                   setTimeOfLastClick(Date.now());
                 }}
               >
                 {link.name[language]}
                 
-                {link.name[language] === activeSection && ( 
+                {link.name[language] === activeSection && (
                   <motion.span 
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800" 
-                    layoutId="activeSection" 
+                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                    layoutId="activeSection"
                     transition={{
-                      type: "spring", 
-                      stiffness: 380, 
+                      type: "spring",
+                      stiffness: 380,
                       damping: 30
                     }}
                   ></motion.span>
