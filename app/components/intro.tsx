@@ -64,18 +64,18 @@ export default function Intro() {
         {language === 'en' ? (
           <>
             <span className="font-bold">Hello everyone, I'm José Imhoff.</span> I'm a{" "}
-            <span className="font-bold">full-stack developer oriented to front-end</span> with{" "}
+            <span className="font-bold">full-stack developer oriented to front-end who is transitioning to back-end</span> with{" "}
             <span className="font-bold">2 years</span> of experience. I enjoy
             building <span className="italic">sites & apps</span>. My focus is{" "}
-            <span className="underline">React (Next.js) and TailwindCSS</span>.
+            <span className="underline">React (Next.js) and TailwindCSS but actually I'm am learning Python</span>.
           </>
         ) : (
           <>
             <span className="font-bold">Hola a todos, soy José Imhoff.</span> Soy un{" "}
-            <span className="font-bold">desarrollador full-stack orientado al front-end</span> con{" "}
+            <span className="font-bold">desarrollador full-stack orientado al front-end que esta transicionando a back-end</span> con{" "}
             <span className="font-bold">2 años</span> de experiencia. Disfruto
             construyendo <span className="italic">sitios y aplicaciones</span>. Mi enfoque es{" "}
-            <span className="underline">React (Next.js) y TailwindCSS</span>.
+            <span className="underline">React (Next.js) y TailwindCSS pero actualmente estoy aprendiendo Python</span>.
           </>
         )}
       </motion.h1>
@@ -102,7 +102,7 @@ export default function Intro() {
         <a
           className="group bg-gray-200 px-7 py-3 flex items-center gap 2 rounded-full outline-none 
         focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="/Jose-Imhoff-Frontend-Developer.pdf"
+          href="/Jose_Imhoff_CV_Desarrollador.Web.pdf"
           download
         >
           {language === 'en' ? 'Download CV' : 'Descargar CV'}{" "}
