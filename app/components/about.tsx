@@ -20,60 +20,71 @@ export default function About() {
     >
       <SectionHeading>{language === 'en' ? 'About Me' : 'Sobre Mí'}</SectionHeading>
       <p className="mb-3">
-        {language === 'en' ? (
+        {language === "en" ? (
           <>
-            After graduating with a degree in{" "}
-            <span className="font-medium">Programming technnician</span>, I decided to pursue my
-            passion for programming. I enrolled in a coding bootcamp "Full Stack Developer" and learned{" "}
-            <span className="font-medium">full-stack web development</span>.{" "}
-            <span className="italic">My favorite part of programming</span> is the
-            problem-solving aspect and some designs of pages and apps. I <span className="underline">love</span> the
-            feeling of finally figuring out a solution to a problem. My core stack
-            is{" "}
+            After graduating as a{" "}
+            <span className="font-medium">Programming Technician</span>, I decided to
+            fully commit to software development. I completed a{" "}
+            <span className="font-medium">Full-Stack Developer</span> bootcamp and
+            built projects using{" "}
             <span className="font-medium">
-              React, Next.js, Node.js, Tailwind, TypeScript, Firebase, MongoDB and some others
+              React, Next.js, Node.js, Tailwind, TypeScript, Firebase, and MongoDB
             </span>
-            . I am also familiar with TypeScript. I am always looking to
-            learn new technologies. I am currently looking for a{" "}
-            <span className="font-medium">full-time position</span> as a software
-            developer junior in order to expand my skills.
+            .
+            <br />
+            <span className="italic">What I enjoy most</span> is problem-solving and
+            turning ideas into clean, usable products. Right now, I’m focusing on{" "}
+            <span className="font-medium">Backend development with Python</span>{" "}
+            (APIs, databases, and best practices) while continuing to strengthen my
+            full-stack foundation.
+            <br />
+            I’m looking for a{" "}
+            <span className="font-medium">junior software developer</span> role where I
+            can learn, contribute, and grow through real-world projects.
           </>
         ) : (
           <>
-            Después de graduarme con un título en{" "}
-            <span className="font-medium">Técnico en Programación</span>, decidí seguir mi
-            pasión por la programación. Me inscribí en un bootcamp "Desarrollador Full Stack" y aprendí{" "}
-            <span className="font-medium">desarrollo web full-stack</span>.{" "}
-            <span className="italic">Mi parte favorita de la programación</span> es el
-            aspecto de resolución de problemas y algunos diseños de páginas y aplicaciones. Me <span className="underline">encanta</span> la
-            sensación de finalmente encontrar una solución a un problema. Mi stack principal
-            es{" "}
+            Después de graduarme como{" "}
+            <span className="font-medium">Técnico en Programación</span>, decidí
+            enfocarme de lleno en el desarrollo de software. Completé un bootcamp de{" "}
+            <span className="font-medium">Desarrollador Full Stack</span> y construí
+            proyectos con{" "}
             <span className="font-medium">
-              React, Next.js, Node.js, Tailwind, TypeScript, Firebase, MongoDB y algunos otros
+              React, Next.js, Node.js, Tailwind, TypeScript, Firebase y MongoDB
             </span>
-            . También estoy familiarizado con TypeScript. Siempre estoy buscando
-            aprender nuevas tecnologías. Actualmente estoy buscando una{" "}
-            <span className="font-medium">posición a tiempo completo</span> como
-            desarrollador de software junior para expandir mis habilidades.
+            .
+            <br />
+            <span className="italic">Lo que más disfruto</span> es resolver problemas y
+            convertir ideas en productos claros y útiles. Actualmente estoy
+            enfocándome en{" "}
+            <span className="font-medium">Backend con Python</span> (APIs, bases de
+            datos y buenas prácticas), sin dejar de fortalecer mi base full-stack.
+            <br />
+            Busco una{" "}
+            <span className="font-medium">posición junior</span> donde pueda aprender,
+            aportar y crecer con proyectos reales.
           </>
         )}
       </p>
+
       <p>
-        {language === 'en' ? (
+        {language === "en" ? (
           <>
-            <span className="italic">When I'm not coding</span>, I enjoy playing
-            video games, watching movies, or reading light novels. I also enjoy{" "}
-            <span className="font-medium">learning new things</span>. I am currently
-            learning about{" "}
-            <span className="font-medium">Java and Power BI</span>. I'm also interested in learning to cook.
+            <span className="italic">When I'm not coding</span>, I enjoy playing video
+            games, watching movies, and reading light novels. I also like{" "}
+            <span className="font-medium">learning new things</span>—currently{" "}
+            <span className="font-medium">Python backend</span> and building small
+            projects to improve every week.
           </>
         ) : (
           <>
-            <span className="italic">Cuando no estoy programando</span>, disfruto jugando
-            videojuegos, viendo películas o leyendo novelas ligeras. También disfruto{" "}
-            <span className="font-medium">aprendiendo cosas nuevas</span>. Actualmente
-            estoy aprendiendo sobre{" "}
-            <span className="font-medium">Java y Power BI</span>. También estoy interesado en aprender a cocinar.
+            <span className="italic">Cuando no estoy programando</span>, disfruto
+            jugando videojuegos, viendo películas y leyendo novelas ligeras. También
+            me gusta{" "}
+            <span className="font-medium">aprender cosas nuevas</span>: ahora estoy
+            enfocado en{" "}
+            <span className="font-medium">backend con Python</span> y en construir
+            proyectos pequeños para mejorar cada semana.
           </>
         )}
       </p>
