@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../app/components/header";
+
 import ActiveSectionContextProvider from "./context/active-section-context";
 import Footer from "./components/footer";
 import { Toaster } from "react-hot-toast";
 import ThemeContextProvider from "./context/theme-context";
 import FloatingButtons from "./components/FloatingButtons";
 import LanguageContextProvider from "./context/language-context";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -66,28 +68,48 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <meta charSet="UTF-8" />
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const savedLanguage = localStorage.getItem('language') || 'en';
+                document.documentElement.lang = savedLanguage;
+              })();
+            `,
+          }}
+        />
+        <meta charSet="UTF-8" />
 
-      <meta name="robots" content="index, follow"></meta>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-      ></meta>
+        <meta name="robots" content="index, follow"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 overflow-x-hidden`}
       >
         <div className="fixed top-[-6rem] -right-[10rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:right-[11rem] sm:w-[68.75rem] dark:bg-[#946263] md:right-[5rem] lg:right-[10rem] xl:right-[15rem] -z-10"></div>
         <div className="fixed bg-[#dbd7fb] top-[-1rem] -z-10 left-[-20rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
         <div className="max-w-[50rem] mx-auto px-4 sm:px-6 w-full"></div>
+
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-[9999] focus:bg-black focus:text-white focus:px-4 focus:py-2"
+        >
+          Skip to main content
+        </a>
         <ThemeContextProvider>
           <LanguageContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-            <Toaster position="top-right"></Toaster>
-          </ActiveSectionContextProvider>
-          <FloatingButtons />
+            <ActiveSectionContextProvider>
+              <Header />
+              {children}
+              <Footer />
+              <Toaster position="top-right"></Toaster>
+            </ActiveSectionContextProvider>
+            <FloatingButtons />
           </LanguageContextProvider>
         </ThemeContextProvider>
       </body>
