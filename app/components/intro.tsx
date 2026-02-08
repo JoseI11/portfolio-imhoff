@@ -64,19 +64,23 @@ export default function Intro() {
       >
         {language === 'en' ? (
           <>
-            <span className="font-bold">Hello everyone, I'm José Imhoff.</span> I'm a{" "}
-            <span className="font-bold">full-stack developer oriented to front-end who is transitioning to back-end</span> with{" "}
-            <span className="font-bold">2 years</span> of experience. I enjoy
-            building <span className="italic">sites & apps</span>. My focus is{" "}
-            <span className="underline">React (Next.js) and TailwindCSS but actually I'm am learning Python</span>.
+            <span className="font-bold">Hello, I'm José Imhoff.</span> I'm a{" "}
+            <span className="font-bold">junior backend developer</span> with{" "}
+            <span className="font-bold">~2 years</span> of experience. I'm also open to{" "}
+            <span className="italic">simple frontend roles</span>. I enjoy
+            building <span className="italic">scalable systems and clean APIs</span>. Currently learning{" "}
+            <span className="underline">Python & backend best practices</span>, with solid{" "}
+            <span className="underline">React & Next.js</span> experience.
           </>
         ) : (
           <>
-            <span className="font-bold">Hola a todos, soy José Imhoff.</span> Soy un{" "}
-            <span className="font-bold">desarrollador full-stack orientado al front-end que esta transicionando a back-end</span> con{" "}
-            <span className="font-bold">2 años</span> de experiencia. Disfruto
-            construyendo <span className="italic">sitios y aplicaciones</span>. Mi enfoque es{" "}
-            <span className="underline">React (Next.js) y TailwindCSS pero actualmente estoy aprendiendo Python</span>.
+            <span className="font-bold">Hola, soy José Imhoff.</span> Soy un{" "}
+            <span className="font-bold">desarrollador junior backend</span> con{" "}
+            <span className="font-bold">~2 años</span> de experiencia. También estoy abierto a{" "}
+            <span className="italic">roles frontend simples</span>. Disfruto
+            construir <span className="italic">sistemas escalables y APIs limpias</span>. Actualmente aprendiendo{" "}
+            <span className="underline">Python y buenas prácticas de backend</span>, con sólida experiencia en{" "}
+            <span className="underline">React & Next.js</span>.
           </>
         )}
       </motion.h1>
@@ -106,7 +110,7 @@ export default function Intro() {
         <Button
           variant="light"
           size="md"
-          href="/Jose_Imhoff_CV_Desarrollador.Web.pdf"
+          href="/CV_Jose_Imhoff_Dev_FullStack.pdf"
           download
         >
           {language === 'en' ? 'Download CV' : 'Descargar CV'}{" "}

@@ -23,8 +23,8 @@ export default function Home() {
       <SectionDivider />
       <Skills />
       <SectionDivider />
-      <Services />
-      <SectionDivider />
+      {/* <Services />
+      <SectionDivider /> */}
       <Experience />
       <SectionDivider />
       <Contact />

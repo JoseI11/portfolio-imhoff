@@ -1,4 +1,3 @@
-// app/components/whatsapp-button.tsx
 import React from "react";
 import Image from "next/image";
 import whatsapplogo from "../../public/Social Networks/whatsapplogo.webp";
