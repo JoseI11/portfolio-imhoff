@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { projectsData } from "../lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
+
 import { useLanguage } from "../context/language-context";
 
 type ProjectProps = (typeof projectsData)[number] & {
