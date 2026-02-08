@@ -9,7 +9,7 @@ import cobrakaiImg from "../../public/Karate-kid-page.webp";
 import mascocuidadoImg from "../../public/mascocuidado.webp";
 import computersuppliesImg from "../../public/Computer-supplies-page.webp";
 import electrorafaelaImg from "../../public/electrorafaela.webp"
-
+import semillasenterasImg from "../../public/semillas-enteras.webp"
 
 export const links = [
   {
@@ -150,6 +150,107 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+
+  {
+    title: {
+      en: "Semillas Enteras",
+      es: "Semillas Enteras"
+    },
+    intro: {
+      en: "Conversion-oriented website for a real small business, built to showcase products and generate structured orders without a payment gateway.",
+      es: "Sitio web orientado a conversión para un emprendimiento real, desarrollado para mostrar productos y generar pedidos estructurados sin pasarela de pago."
+    },
+    description: {
+      en: "Multi-section website for a small food business, designed to present cereal bar products and allow customers to place orders sent automatically by email.",
+      es: "Sitio web con múltiples secciones para un emprendimiento de alimentos, diseñado para presentar barritas de cereales y permitir que los clientes generen pedidos enviados automáticamente por correo."
+    },
+    highlights: {
+      en: [
+        "Product showcase with sorting and section-based filtering",
+        "Simulated cart with structured order summary",
+        "Email-based order flow without payment gateway"
+      ],
+      es: [
+        "Muestra de productos con ordenamiento y filtrado por secciones",
+        "Carrito simulado con resumen estructurado del pedido",
+        "Flujo de pedidos vía correo sin pasarela de pago"
+      ]
+    },
+    metrics: {
+      en: [
+        { label: "Project Type", value: "Client project" },
+        { label: "Development Time", value: "≈ 2 weeks" },
+        { label: "Order Flow", value: "Email-based" }
+      ],
+      es: [
+        { label: "Tipo de Proyecto", value: "Cliente real" },
+        { label: "Tiempo de Desarrollo", value: "≈ 2 semanas" },
+        { label: "Flujo de Pedido", value: "Vía correo" }
+      ]
+    },
+    caseStudy: {
+      en: {
+        situation: "A small family business needed an online presence to showcase products and receive orders without using a payment gateway.",
+        task: "Design and build a website that allowed users to browse products, apply filters, and generate structured orders sent automatically by email.",
+        actions: [
+          "Designed the site structure and user flow based on real business requirements and customer needs.",
+          "Built a multi-section interface to display products with sorting and section-based filtering.",
+          "Implemented a simulated cart that generates a structured order summary including products, quantities, and total amount.",
+          "Used Bolt as an accelerator for initial UI scaffolding and faster iteration, refining logic and structure manually.",
+          "Used GitHub Copilot as coding assistance for refactoring and improvements related to SEO, performance, and accessibility.",
+          "Applied Vercel configurations and best practices to optimize SEO, performance, and accessibility following Lighthouse guidelines."
+        ],
+        challenges: [
+          "Designing a clear and intuitive order flow without a payment gateway",
+          "Balancing fast delivery with maintainable and readable code",
+          "Optimizing performance and accessibility without overengineering"
+        ],
+        results: [
+          "Functional website used for real order inquiries",
+          "Clear user flow aligned with the business needs",
+          "Optimized structure ready for future improvements and metrics"
+        ],
+        learnings: [
+          "Designing conversion-focused flows for small businesses",
+          "Responsible use of AI-assisted tools as part of a professional workflow",
+          "Iterative optimization based on SEO, performance, and accessibility feedback"
+        ]
+      },
+      es: {
+        situation: "Un emprendimiento familiar necesitaba presencia online para mostrar productos y recibir pedidos sin utilizar una pasarela de pago.",
+        task: "Diseñar y desarrollar un sitio web que permitiera explorar productos, aplicar filtros y generar pedidos estructurados enviados automáticamente por correo.",
+        actions: [
+          "Diseñé la estructura del sitio y el flujo de usuario en base a requerimientos reales del negocio y necesidades del cliente.",
+          "Construí una interfaz con múltiples secciones para mostrar productos con opciones de ordenamiento y filtrado por secciones.",
+          "Implementé un carrito simulado que genera un resumen estructurado del pedido con productos, cantidades y monto total.",
+          "Utilicé Bolt como acelerador para el armado inicial de la UI y la iteración rápida, refinando manualmente la lógica y la estructura.",
+          "Usé GitHub Copilot como asistencia para refactorización y mejoras relacionadas con SEO, performance y accesibilidad.",
+          "Apliqué configuraciones y buenas prácticas de Vercel para optimizar SEO, rendimiento y accesibilidad siguiendo Lighthouse."
+        ],
+        challenges: [
+          "Diseñar un flujo de pedido claro sin pasarela de pago",
+          "Equilibrar velocidad de entrega con código mantenible",
+          "Optimizar performance y accesibilidad sin sobreingeniería"
+        ],
+        results: [
+          "Sitio web funcional utilizado para pedidos reales",
+          "Flujo de usuario claro y alineado a las necesidades del negocio",
+          "Estructura optimizada preparada para mejoras futuras"
+        ],
+        learnings: [
+          "Diseño de flujos de conversión para pequeños emprendimientos",
+          "Uso responsable de herramientas asistidas por IA en el desarrollo",
+          "Optimización iterativa basada en SEO, performance y accesibilidad"
+        ]
+      }
+    },
+    tags: ["React", "JavaScript", "CSS", "SEO", "Performance"],
+    imageUrl: semillasenterasImg,
+    url: "https://semillas-enteras-cer-23x8.bolt.host/"
+  },
+
+
+
   {
     title: {
       en: "Electro Rafaela",
