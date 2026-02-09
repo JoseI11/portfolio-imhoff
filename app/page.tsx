@@ -8,7 +8,6 @@ import SectionDivider from "./components/section-divider";
 const About = dynamic(() => import('./components/about'));
 const Projects = dynamic(() => import('./components/projects'));
 const Skills = dynamic(() => import('./components/skills'));
-const Services = dynamic(() => import('./components/services'));
 const Experience = dynamic(() => import('./components/experience'));
 const Contact = dynamic(() => import('./components/contact'));
 
@@ -23,8 +22,8 @@ export default function Home() {
       <SectionDivider />
       <Skills />
       <SectionDivider />
-      <Services />
-      <SectionDivider />
+      {/* <Services />
+      <SectionDivider /> */}
       <Experience />
       <SectionDivider />
       <Contact />

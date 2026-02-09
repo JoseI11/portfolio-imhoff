@@ -21,7 +21,15 @@ export default function LanguageContextProvider({
   const [language, setLanguage] = useState<Language>("en");
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "es" : "en"));
+    setLanguage((prev)=>{
+      const newLang = prev === "en" ? "es" : "en";
+      localStorage.setItem("preferredLanguage", newLang);
+      if (typeof document !== "undefined") {
+        document.documentElement.lang = newLang;
+      }
+      return newLang
+    })
+
   };
 
   return (

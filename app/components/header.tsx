@@ -8,7 +8,8 @@ import { useActiveSectionContext } from "../context/active-section-context";
 import { useLanguage } from "../context/language-context";
 
 export default function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   const { language } = useLanguage();
 
   return (
@@ -22,18 +23,22 @@ export default function Header() {
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 w-[95%] max-w-3xl -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
         <ul className="flex w-full flex-wrap items-center justify-center gap-1 text-[0.7rem] text-gray-500 xs:text-[0.8rem] sm:flex-nowrap sm:gap-2 sm:text-[0.9rem]">
           {links.map((link) => (
-            <motion.li 
+            <motion.li
               className="h-3/4 flex items-center justify-center relative"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
-              <Link 
+              <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-2 py-3 transition hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap",
+                  "flex w-full items-center justify-center px-2 py-3 transition",
+                  "hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap",
+                  "focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 dark:focus:outline-blue-400",
+                  "rounded-md",
                   {
-                    "text-gray-950 dark:text-gray-200": activeSection === link.name[language]
-                  }
+                    "text-gray-950 dark:text-gray-200":
+                      activeSection === link.name[language],
+                  },
                 )}
                 href={link.hash}
                 onClick={() => {
@@ -42,15 +47,15 @@ export default function Header() {
                 }}
               >
                 {link.name[language]}
-                
+
                 {link.name[language] === activeSection && (
-                  <motion.span 
+                  <motion.span
                     className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",
                       stiffness: 380,
-                      damping: 30
+                      damping: 30,
                     }}
                   ></motion.span>
                 )}

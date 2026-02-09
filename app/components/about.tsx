@@ -32,37 +32,41 @@ export default function About() {
             </span>
             .
             <br />
-            <span className="italic">What I enjoy most</span> is problem-solving and
-            turning ideas into clean, usable products. Right now, I’m focusing on{" "}
-            <span className="font-medium">Backend development with Python</span>{" "}
-            (APIs, databases, and best practices) while continuing to strengthen my
-            full-stack foundation.
+            <span className="italic">What I enjoy most</span> is{" "}
+            <span className="font-medium">solving problems and building scalable systems</span>.
+            I'm now focusing on{" "}
+            <span className="font-medium">backend development with Python</span> (APIs,
+            databases, system design). I'm open to simple frontend roles but my main focus
+            is backend.
             <br />
-            I’m looking for a{" "}
-            <span className="font-medium">junior software developer</span> role where I
-            can learn, contribute, and grow through real-world projects.
+            I'm seeking a{" "}
+            <span className="font-medium">junior backend role</span> where I can contribute
+            to meaningful projects and continuously grow as an engineer.
           </>
         ) : (
           <>
             Después de graduarme como{" "}
-            <span className="font-medium">Técnico en Programación</span>, decidí
-            enfocarme de lleno en el desarrollo de software. Completé un bootcamp de{" "}
+            <span className="font-medium">Técnico en Programación</span>, me comprometí con
+            el desarrollo de software. Completé un bootcamp de{" "}
             <span className="font-medium">Desarrollador Full Stack</span> y construí
-            proyectos con{" "}
+            proyectos reales con{" "}
             <span className="font-medium">
               React, Next.js, Node.js, Tailwind, TypeScript, Firebase y MongoDB
             </span>
-            .
+            . También tengo{" "}
+            <span className="font-medium">~1.5 años de experiencia profesional</span> como
+            Desarrollador Full Stack (PHP & Next.js).
             <br />
-            <span className="italic">Lo que más disfruto</span> es resolver problemas y
-            convertir ideas en productos claros y útiles. Actualmente estoy
-            enfocándome en{" "}
-            <span className="font-medium">Backend con Python</span> (APIs, bases de
-            datos y buenas prácticas), sin dejar de fortalecer mi base full-stack.
+            <span className="italic">Lo que más disfruto</span> es{" "}
+            <span className="font-medium">resolver problemas y construir sistemas escalables</span>.
+            Actualmente estoy enfocándome en{" "}
+            <span className="font-medium">backend con Python</span> (APIs, bases de datos,
+            arquitectura de sistemas). Estoy abierto a roles frontend simples pero mi enfoque principal
+            es backend.
             <br />
-            Busco una{" "}
-            <span className="font-medium">posición junior</span> donde pueda aprender,
-            aportar y crecer con proyectos reales.
+            Busco un{" "}
+            <span className="font-medium">rol junior backend</span> donde pueda aportar a
+            proyectos significativos y crecer como ingeniero.
           </>
         )}
       </p>
