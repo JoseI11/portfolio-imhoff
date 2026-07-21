@@ -65,22 +65,20 @@ export default function Intro() {
         {language === 'en' ? (
           <>
             <span className="font-bold">Hello, I'm José Imhoff.</span> I'm a{" "}
-            <span className="font-bold">junior backend developer</span> with{" "}
-            <span className="font-bold">~2 years</span> of experience. I'm also open to{" "}
-            <span className="italic">simple frontend roles</span>. I enjoy
-            building <span className="italic">scalable systems and clean APIs</span>. Currently learning{" "}
-            <span className="underline">Python & backend best practices</span>, with solid{" "}
-            <span className="underline">React & Next.js</span> experience.
+            <span className="font-bold">web developer</span> with{" "}
+            <span className="font-bold">~2 years</span> of experience building{" "}
+            <span className="italic">fast, accessible, and scalable websites</span>.
+            I focus on <span className="underline">performance, SEO, and clean UX</span>,
+            with solid experience in <span className="underline">React & Next.js</span>.
           </>
         ) : (
           <>
             <span className="font-bold">Hola, soy José Imhoff.</span> Soy un{" "}
-            <span className="font-bold">desarrollador junior backend</span> con{" "}
-            <span className="font-bold">~2 años</span> de experiencia. También estoy abierto a{" "}
-            <span className="italic">roles frontend simples</span>. Disfruto
-            construir <span className="italic">sistemas escalables y APIs limpias</span>. Actualmente aprendiendo{" "}
-            <span className="underline">Python y buenas prácticas de backend</span>, con sólida experiencia en{" "}
-            <span className="underline">React & Next.js</span>.
+            <span className="font-bold">desarrollador web</span> con{" "}
+            <span className="font-bold">~2 años</span> de experiencia creando{" "}
+            <span className="italic">sitios rápidos, accesibles y escalables</span>.
+            Me enfoco en <span className="underline">performance, SEO y UX limpia</span>,
+            con sólida experiencia en <span className="underline">React & Next.js</span>.
           </>
         )}
       </motion.h1>

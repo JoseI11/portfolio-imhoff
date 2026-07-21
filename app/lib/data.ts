@@ -10,6 +10,7 @@ import mascocuidadoImg from "../../public/mascocuidado.webp";
 import computersuppliesImg from "../../public/Computer-supplies-page.webp";
 import electrorafaelaImg from "../../public/electrorafaela.webp"
 import semillasenterasImg from "../../public/semillas-enteras.webp"
+import estacionFitnessImg from "../../public/portada-estacion-fitness.webp"
 
 export const links = [
   {
@@ -150,6 +151,139 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+
+  {
+    title: {
+      en: "Estacion Fitness",
+      es: "Estacion Fitness",
+    },
+    intro: {
+      en: "Fitness center website with digital registration and workflow automation.",
+      es: "Sitio web para un centro de entrenamiento con registro digital y automatizacion de procesos.",
+    },
+    description: {
+      en: "Designed and developed a responsive website that centralizes gym information, streamlines member registration, and automates administrative workflows through Google Workspace integrations.",
+      es: "Diseñe y desarrolle un sitio web responsivo que centraliza la informacion del gimnasio, agiliza el registro de alumnos y automatiza procesos administrativos mediante integraciones con Google Workspace.",
+    },
+    meta: {
+      en: ["2026", "4 weeks", "Client Project"],
+      es: ["2026", "4 semanas", "Proyecto para cliente"],
+    },
+    highlights: {
+      en: [
+        "Centralized schedules, services, pricing and contact information.",
+        "Digital member registration with Google Forms.",
+        "Automated reports and administrative workflows using Google Sheets and Google Apps Script.",
+      ],
+      es: [
+        "Centralizacion de horarios, servicios, precios y datos de contacto.",
+        "Registro digital de alumnos mediante Google Forms.",
+        "Automatizacion de reportes y procesos administrativos con Google Sheets y Google Apps Script.",
+      ],
+    },
+    metrics: {
+      en: [
+        {
+          label: "Platform",
+          value: "Web + Automation",
+        },
+        {
+          label: "Registration",
+          value: "Digital",
+        },
+        {
+          label: "Reports",
+          value: "Automated",
+        },
+      ],
+      es: [
+        {
+          label: "Plataforma",
+          value: "Web + Automatizacion",
+        },
+        {
+          label: "Registro",
+          value: "Digital",
+        },
+        {
+          label: "Reportes",
+          value: "Automaticos",
+        },
+      ],
+    },
+    technologies: {
+      frontend: ["React", "Vite", "TypeScript", "Tailwind CSS"],
+      backend: ["Google Apps Script"],
+      integrations: ["Google Forms", "Google Sheets"],
+      deployment: ["Vercel"],
+    },
+    caseStudy: {
+      en: {
+        situation:
+          "The gym managed information across Instagram, WhatsApp, and paper forms, making it difficult for potential members to access information while increasing administrative work.",
+        task:
+          "Develop a responsive website and digitize registration and administrative processes using Google Workspace tools.",
+        actions: [
+          "Built the website with React, Vite, TypeScript and Tailwind CSS.",
+          "Designed a responsive interface optimized for mobile devices.",
+          "Integrated Google Forms for digital member registration.",
+          "Automated reports and administrative workflows with Google Sheets and Google Apps Script.",
+        ],
+        challenges: [
+          "Keeping business information easy to update without requiring code changes.",
+          "Replacing manual registration and reporting processes with digital workflows.",
+        ],
+        results: [
+          "Centralized all gym information into a single platform.",
+          "Simplified member registration through digital forms.",
+          "Reduced repetitive administrative tasks through automation.",
+        ],
+        learnings: [
+          "Business value comes from solving operational problems, not only building interfaces.",
+          "Google Workspace provides powerful low-cost automation solutions for small businesses.",
+        ],
+      },
+      es: {
+        situation:
+          "El gimnasio administraba su informacion entre Instagram, WhatsApp y formularios en papel, lo que dificultaba el acceso a la informacion para nuevos alumnos y generaba tareas administrativas repetitivas.",
+        task:
+          "Desarrollar un sitio web responsivo y digitalizar los procesos de registro y administracion utilizando herramientas de Google Workspace.",
+        actions: [
+          "Desarrolle el sitio utilizando React, Vite, TypeScript y Tailwind CSS.",
+          "Diseñe una interfaz responsiva optimizada para dispositivos moviles.",
+          "Implemente Google Forms para el registro digital de alumnos.",
+          "Automatice reportes y procesos administrativos mediante Google Sheets y Google Apps Script.",
+        ],
+        challenges: [
+          "Permitir que la informacion pudiera actualizarse facilmente sin modificar el codigo.",
+          "Reemplazar procesos manuales de registro y administracion por flujos digitales.",
+        ],
+        results: [
+          "Toda la informacion del gimnasio quedo centralizada en un unico sitio.",
+          "Se simplifico el registro de alumnos mediante formularios digitales.",
+          "Se redujeron tareas administrativas repetitivas gracias a la automatizacion.",
+        ],
+        learnings: [
+          "El mayor impacto de una solucion digital esta en resolver problemas operativos ademas de ofrecer una buena experiencia de usuario.",
+          "Google Workspace permite implementar automatizaciones robustas y de bajo costo para pequenos negocios.",
+        ],
+      },
+    },
+    tags: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Google Forms",
+      "Google Sheets",
+      "Google Apps Script",
+      "Responsive Design",
+      "Automation",
+      "Vercel",
+    ],
+    imageUrl: estacionFitnessImg,
+    url: "https://www.estacionfitness.com",
+  },
 
   {
     title: {
