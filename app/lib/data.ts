@@ -134,8 +134,8 @@ export const experiencesData = [
   },
   {
     title: {
-      en: "Next.js Full Stack Developer | Electro Rafaela (On-site)",
-      es: "Desarrollador Full Stack Next.js | Electro Rafaela (Presencial)"
+      en: "Next.js Web Developer | Electro Rafaela (On-site)",
+      es: "Desarrollador Web Next.js | Electro Rafaela (Presencial)"
     },
     location: {
       en: "Rafaela, Santa Fe, Argentina",
@@ -383,8 +383,6 @@ export const projectsData = [
     url: "https://semillas-enteras-cer-23x8.bolt.host/"
   },
 
-
-
   {
     title: {
       en: "Electro Rafaela",
@@ -470,7 +468,7 @@ export const projectsData = [
         ],
       },
     },
-    tags: ["ReactJs", "Firebase", "TailwindCSS", "NodeJs"],
+    tags: ["ReactJs", "Firebase", "TailwindCSS"],
     imageUrl: electrorafaelaImg,
     url: "https://electro-rafaela.vercel.app/"
   },
@@ -583,77 +581,72 @@ export const projectsData = [
       en: "[Bootcamp Team Project] Job board platform for remote developer positions. I led frontend development with React, TypeScript, and Tailwind. Features: advanced filtering, real-time updates, and pagination for 200+ listings.",
       es: "[Proyecto del Bootcamp en Equipo] Plataforma de bolsa de trabajo para posiciones remotas de desarrolladores. Lideré el desarrollo frontend con React, TypeScript y Tailwind. Funcionalidades: filtrado avanzado, actualizaciones en tiempo real y paginación para 200+ listados."
     },
+
     highlights: {
       en: [
-        "Advanced job filtering and sorting capabilities",
-        "Real-time job listing updates",
-        "Pagination for better performance with large datasets",
+        "Search and filtering by pet type, service, and location",
+        "Responsive UI built with React, TypeScript, and Tailwind",
+        "Team collaboration following a shared component architecture",
       ],
       es: [
-        "Capacidades avanzadas de filtrado y ordenamiento de trabajos",
-        "Actualizaciones de listados de trabajos en tiempo real",
-        "Paginación para mejor rendimiento con grandes conjuntos de datos",
+        "Búsqueda y filtrado por tipo de mascota, servicio y ubicación",
+        "UI responsiva construida con React, TypeScript y Tailwind",
+        "Colaboración en equipo siguiendo una arquitectura de componentes compartida",
       ],
     },
     metrics: {
       en: [
-        { label: "Jobs Listed", value: "200+" },
-        { label: "Filter Options", value: "8" },
-        { label: "Page Load", value: "1.2s" },
-        { label: "User Rating", value: "4.5/5" },
+        { label: "Team Size", value: "7" },
+        { label: "My Role", value: "Frontend developer" },
+        { label: "Tech Stack", value: "React + TS" },
       ],
       es: [
-        { label: "Trabajos Listados", value: "200+" },
-        { label: "Opciones Filtrado", value: "8" },
-        { label: "Carga de Página", value: "1.2s" },
-        { label: "Calificación", value: "4.5/5" },
+        { label: "Tamaño del Equipo", value: "" },
+        { label: "Mi Rol", value: "Frontend developer" },
+        { label: "Stack Técnico", value: "React + TS" },
       ],
     },
     caseStudy: {
       en: {
-        situation: "Team project to build a job board platform for remote developer positions with advanced filtering capabilities.",
-        task: "Lead front-end development to create responsive UI with filtering, sorting, and pagination features.",
+        situation: "Team project simulating a real product environment: a platform connecting pet owners with caregivers offering pet-sitting services.",
+        task: "Lead front-end development to create a responsive UI with search, filtering, and a smooth booking-oriented user experience.",
         actions: [
-          "Built reusable React components for job listings and filters",
+          "Built reusable React components for caregiver listings and search filters",
           "Implemented TypeScript for type safety across the codebase",
           "Styled with Tailwind CSS for consistent, responsive design",
         ],
         challenges: [
-          "Managing state across multiple filter options",
-          "Optimizing performance with large job datasets",
-          "Ensuring smooth pagination user experience",
+          "Coordinating frontend architecture decisions with a distributed team",
+          "Designing filters that felt intuitive for non-technical users",
         ],
         results: [
-          "Deployed job board with 200+ listings",
-          "Average page load time of 1.2 seconds",
-          "User satisfaction rating of 4.5/5 stars",
+          "Delivered a functional, responsive platform as part of a simulated team project",
+          "Strengthened component architecture and state management skills in a collaborative setting",
         ],
         learnings: [
           "React component architecture and state management patterns",
-          "TypeScript benefits for large collaborative projects",
+          "Working with TypeScript in a collaborative, multi-developer codebase",
         ],
       },
       es: {
-        situation: "Proyecto en equipo para construir una plataforma de bolsa de trabajo para posiciones remotas de desarrolladores con capacidades de filtrado avanzado.",
-        task: "Liderar desarrollo front-end para crear UI responsivo con características de filtrado, ordenamiento y paginación.",
+        situation: "Proyecto en equipo simulando un entorno de producto real: una plataforma que conecta dueños de mascotas con cuidadores que ofrecen servicios de cuidado.",
+        task: "Liderar el desarrollo frontend para crear una UI responsiva con búsqueda, filtrado y una experiencia de usuario orientada a la reserva de servicios.",
         actions: [
-          "Construí componentes React reutilizables para listados de trabajos y filtros",
+          "Construí componentes React reutilizables para listados de cuidadores y filtros de búsqueda",
           "Implementé TypeScript para seguridad de tipos en el código",
-          "Estilicé con Tailwind CSS para diseño consistente y responsivo",
+          "Estilicé con Tailwind CSS para un diseño consistente y responsivo",
         ],
         challenges: [
-          "Gestionar estado en múltiples opciones de filtrado",
-          "Optimizar rendimiento con grandes conjuntos de datos",
-          "Asegurar experiencia de usuario fluida en paginación",
+          "Coordinar decisiones de arquitectura frontend con un equipo distribuido",
+          "Diseñar filtros intuitivos para usuarios no técnicos",
         ],
         results: [
-          "Plataforma desplegada con 200+ listados",
-          "Tiempo promedio de carga de 1.2 segundos",
-          "Calificación de satisfacción de usuario de 4.5/5 estrellas",
+          "Entregué una plataforma funcional y responsiva como parte de un proyecto de equipo simulado",
+          "Fortalecí habilidades de arquitectura de componentes y manejo de estado en un entorno colaborativo",
         ],
         learnings: [
           "Patrones de arquitectura de componentes React y gestión de estado",
-          "Beneficios de TypeScript en proyectos colaborativos grandes",
+          "Trabajo con TypeScript en un código colaborativo de múltiples desarrolladores",
         ],
       },
     },
