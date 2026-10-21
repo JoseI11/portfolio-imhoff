@@ -11,6 +11,7 @@ import computersuppliesImg from "../../public/Computer-supplies-page.webp";
 import electrorafaelaImg from "../../public/electrorafaela.webp"
 import semillasenterasImg from "../../public/semillas-enteras.webp"
 import estacionFitnessImg from "../../public/portada-estacion-fitness.webp"
+import shareitImg from "../../public/shareit-ats.webp"
 
 export const links = [
   {
@@ -151,6 +152,94 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+
+  {
+    title: {
+      en: "ShareIT - ATS-Friendly CV Platform",
+      es: "ShareIT - Plataforma de CVs compatibles con ATS",
+    },
+    intro: {
+      en: "Community platform to build CVs optimized for ATS systems.",
+      es: "Plataforma comunitaria para armar CVs optimizados para sistemas ATS.",
+    },
+    description: {
+      en: "I collaborated on the front-end of a platform built by a tech community. From Figma designs, I implemented an animated timeline, a custom-shaped button and the community presentation section.",
+      es: "Colaboré en el desarrollo front-end de una plataforma creada por una comunidad tecnológica. A partir de diseños en Figma, implementé una línea de tiempo animada, un botón de forma personalizada y la sección de presentación de la comunidad.",
+    },
+    highlights: {
+      en: [
+        "Animated 4-step timeline with nodes that appear and disappear.",
+        "Custom-shaped button (horizontal J) implemented faithfully to the design.",
+        "Community presentation section with logo, text and social links.",
+      ],
+      es: [
+        "Línea de tiempo animada de 4 pasos con nodos que aparecen y desaparecen.",
+        "Botón con forma personalizada (J horizontal) implementado fiel al diseño.",
+        "Sección de presentación de la comunidad con logo, texto y redes.",
+      ],
+    },
+    metrics: {
+      en: [
+        { label: "Type", value: "Community project" },
+        { label: "Role", value: "Front-end" },
+        { label: "Contributions", value: "3 components" },
+      ],
+      es: [
+        { label: "Tipo", value: "Proyecto comunitario" },
+        { label: "Rol", value: "Front-end" },
+        { label: "Aportes", value: "3 componentes" },
+      ],
+    },
+    caseStudy: {
+      en: {
+        situation:
+          "The ShareIT community needed a platform for people to build CVs that pass automatic filters (ATS).",
+        task:
+          "Implement key front-end components from the Figma designs, respecting the platform's visual style.",
+        actions: [
+          "Implemented the 4-step timeline with an appearing animation.",
+          "Converted the custom-shaped button from the design into code.",
+          "Built the community presentation section.",
+          "Adapted the components to different screen sizes.",
+        ],
+        challenges: [
+          "Matching the button shape and animations exactly as in Figma, with the required animation and transition.",
+          "Working on a community project with code and design from other people.",
+        ],
+        results: [
+          "The components were integrated and are running on the published site.",
+        ],
+        learnings: [
+          "Replicating and working from Figma designs with higher fidelity.",
+        ],
+      },
+      es: {
+        situation:
+          "La comunidad ShareIT necesitaba una plataforma para que las personas armaran CVs que superen los filtros automáticos (ATS).",
+        task:
+          "Implementar en el front-end componentes clave a partir de los diseños en Figma, respetando el estilo visual de la plataforma.",
+        actions: [
+          "Implementé la línea de tiempo de 4 pasos con animación de aparición.",
+          "Convertí el botón de forma personalizada del diseño a código.",
+          "Armé la sección de presentación de la comunidad.",
+          "Adapté los componentes a distintos tamaños de pantalla.",
+        ],
+        challenges: [
+          "Lograr la forma del botón y las animaciones tal como estaban en Figma, con la animación y transición necesarias.",
+          "Trabajar en un proyecto comunitario con código y diseño de otras personas.",
+        ],
+        results: [
+          "Los componentes quedaron integrados y funcionando en el sitio publicado.",
+        ],
+        learnings: [
+          "Aprender a replicar y trabajar a partir de diseños de Figma con mayor fidelidad.",
+        ],
+      },
+    },
+    tags: ["React", "Figma", "Responsive Design", "Framer Motion"],
+    imageUrl: shareitImg,
+    url: "https://ats-forshareit.vercel.app/home",
+  },
 
   {
     title: {
