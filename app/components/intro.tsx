@@ -108,7 +108,7 @@ export default function Intro() {
         <Button
           variant="light"
           size="md"
-          href="/CV_Jose_Imhoff_Dev_FullStack.pdf"
+          href="/Jose_Imhoff_CV_Web_developer.pdf"
           download
         >
           {language === 'en' ? 'Download CV' : 'Descargar CV'}{" "}
